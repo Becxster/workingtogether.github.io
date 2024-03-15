@@ -1,0 +1,136 @@
+
+
+.swiper-container {
+    height: 700px;
+    position: relative;
+    font-size: x-large;
+    color: white;
+    
+}
+
+
+.swiper-slide .text {
+    width: 80%; /* Adjust the width as needed */
+    right: 90px;
+  }
+
+
+.parallax-bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 130%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden; /* Ensure the dark overlay doesn't overflow */
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Start with transparent color */
+    transition: background-color 0.5s ease; /* Transition for smooth color change */
+}
+
+.swiper-container.blurred .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.2); /* Dark overlay color */
+}
+
+
+
+
+.swiper-container.blurred .parallax-bg {
+    filter: blur(5px); /* Adjust the blur amount */
+}
+
+/* Styles for the blurred background and dark overlay */
+.swiper-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 130%; /* Cover the entire width of the parent */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Start with transparent color */
+    z-index: 0;
+}
+
+.swiper-slide {
+    margin-left: 20px;
+}
+
+
+.button-56 {
+
+  align-items: center;
+  background-color:darkkhaki;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-56:after {
+
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.button-56:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-56:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.button-56:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-56 {
+    padding: 0 40px;
+  }
+}
+
+.swiper-slide:nth-child(1){
+    margin-left: 0;
+
+}
+
+  
+
+
+
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lolz</title>
+    <link rel="stylesheet" href="css/swipetest.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+</head>
+<body>
+     <!-- Navbar -->
+     <div class="navbar" id="navbar">
+        <div class="container flex">
+            <h1 class="logo">Working Together</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="people.html">People</a></li>
+                    <li><a href="SwipeTest.html">Slideshow</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section>
+        <div class="bg-dark-yellow"></div>
+    </section>
+    <div class="swiper-container">
+        <!-- Parallax background element -->
+        <div class="parallax-bg" style="background-image:url(/Images/WT-Main-Parallax.png)" data-swiper-parallax="-23%">
+          <div class="dark-overlay"></div>
+        </div>
+        <div class="swiper-wrapper" id="mySwiper">
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide">
+            <!-- Each slide has parallax title -->
+            <div class="title" data-swiper-parallax-opacity="0"><h1>Slide Dos</h1></div>
+            <!-- Parallax subtitle -->
+            <div class="subtitle" data-swiper-parallax="-300">Subtitle</div>
+            <!-- And parallax text with custom transition duration -->
+            <div class="text" data-swiper-parallax="-300" data-swiper-parallax-duration="600">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora rerum, est dolore cupiditate expedita minima esse fuga aut unde debitis ratione repudiandae, nihil quod itaque! Nam quia hic ratione nemo a quam, sunt laudantium fugit architecto deserunt iure voluptate voluptatem provident eos recusandae minus tempore autem. Blanditiis nihil saepe maiores, mollitia laboriosam adipisci repudiandae earum sit, minima aspernatur suscipit voluptatum?</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <!-- Each slide has parallax title -->
+            <div class="title" data-swiper-parallax-opacity="0"><h1>Slide Three</h1></div>
+            <!-- Parallax subtitle -->
+            <div class="subtitle" data-swiper-parallax="-300">Subtitle</div>
+            <!-- And parallax text with custom transition duration -->
+            <div class="text" data-swiper-parallax="-300" data-swiper-parallax-duration="600">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora rerum, est dolore cupiditate expedita minima esse fuga aut unde debitis ratione repudiandae, nihil quod itaque! Nam quia hic ratione nemo a quam, sunt laudantium fugit architecto deserunt iure voluptate voluptatem provident eos recusandae minus tempore autem. Blanditiis nihil saepe maiores, mollitia laboriosam adipisci repudiandae earum sit, minima aspernatur suscipit voluptatum?</p>
+            </div>
+          </div>
+        </div>
+        <!-- Swipe Buttons -->
+     <div class="swiper-button-prev"></div>
+     <div class="swiper-button-next"></div>
+     
+      <!-- Pagination (Page 'dot buttons') --> 
+      <div class="swiper-pagination"></div>
+     </div>
+    
+      
+      
+      <button class="button-56" role="button">Buy Now</button>
+      
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script>
+        document.getElementById('mySwiper').addEventListener('click', function () {
+          swiper.slideNext();
+        });
+      
+        const swiper = new Swiper('.swiper-container', {
+          speed: 600,
+          parallax: true,
+          on: {
+            slideChange: function () {
+              const container = document.querySelector('.swiper-container');
+              if (this.activeIndex === 0) {
+                container.classList.remove('blurred');
+              } else {
+                container.classList.add('blurred');
+              }
+            }
+          },
+          // If we need pagination
+          pagination: {
+            el: '.swiper-pagination',
+          },
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          // And if we need scrollbar
+          scrollbar: {
+            el: '.swiper-scrollbar',
+          },
+        });
+      </script>
+      
+</body>
+</html>

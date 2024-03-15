@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Working Together</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="css/style.css">
+
+    <!-- Css -->
+    <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+    
+        body {
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+    
+        
+      </style>
+    </head>
+    
+        <!-- Navbar -->
+        <div class="navbar" id="navbar">
+            <div class="container flex">
+                <a href="index.html">
+                    <h1 class="logo">Working Together</h1>
+                </a>
+    
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="Tests.html">Tests</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    
+
+    <!-- Testing Swipers -->
+
+    <!-- Swiper -->
+  <div class="swiper progress-swiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="Images/Infographics/Allyship Infographic/1.png" alt=""></div>
+        <div class="swiper-slide"><img src="Images/Infographics/Allyship Infographic/2.png" alt=""></div>
+        <div class="swiper-slide"><img src="Images/Infographics/Allyship Infographic/3.png" alt=""></div>
+        <div class="swiper-slide"><img src="Images/Infographics/Allyship Infographic/4.png" alt=""></div>
+        <div class="swiper-slide"><img src="Images/Infographics/Allyship Infographic/5.png" alt=""></div>
+        <div class="swiper-slide"><img src="Images/Infographics/Allyship Infographic/6.png" alt=""></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <div class="item swiper cards-swiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="/Images/Infographics/Allyship Infographic/1.png" alt=""></div>
+        <div class="swiper-slide"><img src="/Images/Infographics/Allyship Infographic/2.png" alt=""></div>
+        <div class="swiper-slide"><img src="/Images/Infographics/Allyship Infographic/3.png" alt=""></div>
+        <div class="swiper-slide"><img src="/Images/Infographics/Allyship Infographic/4.png" alt=""></div>
+        <div class="swiper-slide"><img src="/Images/Infographics/Allyship Infographic/5.png" alt=""></div>
+        <div class="swiper-slide"><img src="/Images/Infographics/Allyship Infographic/6.png" alt=""></div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var progressSwiper = new Swiper(".progress-swiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+      <script>
+        var cardsSwiper = new Swiper(".cards-swiper", {
+            effect: "cards",
+            grabCursor: true,
+
+            pagination: {
+                el: ".swiper-pagination",
+            }
+        });
+      </script>
+    
+
+</body>
+</html>
