@@ -1,0 +1,9 @@
+
+I. Resources To Add
+
+1. Literature Review
+2. TikToks?
+
+II. Fix audio player
+
+III. Media Queries (eyeroll)
