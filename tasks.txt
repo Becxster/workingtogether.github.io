@@ -1,9 +1,18 @@
 
 I. Resources To Add
 
-1. Literature Review
+
+
 2. TikToks?
 
 II. Fix audio player
 
 III. Media Queries (eyeroll)
+
+IV. Speaking
+
+2. Need From Mikki & Eden: 
+    I. Embed code for contact google form
+
+Ideas: 
+Change the border colors and <b> of each quoter to be different from each other

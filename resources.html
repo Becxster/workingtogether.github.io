@@ -184,25 +184,27 @@
 
 
     <!-- Grid of Summaries -->
-    <section class="summaries">
+    <section class="infographics">
         <div class="flex intro-heading">
             <div class="flex-item">
-                <h1><u>Chapter Summaries</u></h1>
-
+                <h1>Infographics</h1>
             </div>
+            
             <div class="flex-item">
                 <hr>
                 <p>Working Together is all about reflection and
-                    understanding where we can benefit in our own lives
-                    from DEI research. Here are some resources you can use to reflect on
-                    your business, personal life, or just brainstorm.
+                    understanding where we can apply DEI research in our own lives. 
+                    Click on the boxes below to view infographics featuring key themes from each chapter
+                    of the book — you are welcome to use these resources to reflect on
+                    your business, personal life, or brainstorm! You can use the <b>download</b> 
+                    icon in the upper right side of each graphic to save them to your device.
                 </p>
             </div>
         </div>
         <div class="activities grid">
 
             <div class="popup-container">
-                <div class="item i1" onclick="openPopup()">
+                <div class="item i1" onclick="openPopup1()">
                     <div class="flex-cs">
                         <div class="flex-item">
                             Chapter 1
@@ -215,7 +217,7 @@
             </div>
 
         <div class="popup-container">
-            <div class="item i2">
+            <div class="item i2" onclick="openPopup2()">
                 <div class="flex-cs">
                     <div class="flex-item">
                         Chapter 2
@@ -227,7 +229,7 @@
             </div>
         </div>
         <div class="popup-container">
-            <div class="item i3">
+            <div class="item i3" onclick="openPopup3()">
                 <div class="flex-cs">
                     <div class="flex-item">
                         Chapter 3
@@ -239,7 +241,7 @@
             </div>
         </div>
         <div class="popup-container">
-            <div class="item i4">
+            <div class="item i4" onclick="openPopup4()">
                 <div class="flex-cs">
                     <div class="flex-item">
                         Chapter 4
@@ -251,7 +253,7 @@
             </div>
         </div>
         <div class="popup-container">
-            <div class="item i5">
+            <div class="item i5" onclick="openPopup5()">
                 <div class="flex-cs">
                     <div class="flex-item">
                         Chapter 5
@@ -263,7 +265,7 @@
             </div>
         </div>
         <div class="popup-container">
-            <div class="item i6">
+            <div class="item i6" onclick="openPopup6()">
                 <div class="flex-cs">
                     <div class="flex-item">
                         Chapter 6
@@ -275,7 +277,7 @@
             </div>
         </div>
         <div class="popup-container">
-            <div class="item i7">
+            <div class="item i7" onclick="openPopup7()">
                 <div class="flex-cs">
                     <div class="flex-item">
                         Chapter 7
@@ -287,7 +289,7 @@
             </div>
         </div>
         <div class="popup-container">
-            <div class="item i8">
+            <div class="item i8" onclick="openPopup8()">
                 <div class="flex-cs">
                     <div class="flex-item">
                         Chapter 8
@@ -299,7 +301,7 @@
             </div>
         </div>
         <div class="popup-container">
-            <div class="item i9">
+            <div class="item i9" onclick="openPopup9()">
                 <div class="flex-cs">
                     <div class="flex-item">
                         Chapter 9
@@ -311,7 +313,7 @@
             </div>
         </div>
         <div class="popup-container">
-            <div class="item i10">
+            <div class="item i10" onclick="openPopup10()">
                 <div class="flex-cs">
                     <div class="flex-item">
                         Chapter 10
@@ -323,7 +325,7 @@
             </div>
         </div>
         <div class="popup-container">
-            <div class="item i11">
+            <div class="item i11" onclick="openPopup11()">
                 <div class="flex-cs">
                     <div class="flex-item">
                         Chapter 11
@@ -335,7 +337,7 @@
             </div>
         </div>  
         <div class="popup-container">
-            <div class="item i12">
+            <div class="item i12" onclick="openPopup12()">
                 <div class="flex-cs">
                     <div class="flex-item">
                         Chapter 12
@@ -347,7 +349,7 @@
             </div>
         </div>
         <div class="popup-container">
-            <div class="item i13">
+            <div class="item i13" onclick="openPopup13()">
                 <div class="flex-cs">
                     <div class="flex-item">
                         Chapter 13
@@ -359,7 +361,7 @@
             </div>
         </div>
         <div class="popup-container">
-            <div class="item i14">
+            <div class="item i14" onclick="openPopup14()">
                 <div class="flex-cs">
                     <div class="flex-item">
                         Chapter 14
@@ -371,10 +373,23 @@
             </div>
         </div>
         <div class="popup-container">
-            <div class="item i15">
+            <div class="item i15" onclick="openPopup15()">
                 <div class="flex-cs">
                     <div class="flex-item">
                         Chapter 15
+                    </div>
+                    <div class="flex-item">
+                        <img src="Images/book-icon.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-container">
+            <div class="item i15" onclick="openPopup16()">
+                <div class="flex-cs">
+                    <div class="flex-item">
+                        Chapter 16
                     </div>
                     <div class="flex-item">
                         <img src="Images/book-icon.svg" alt="">
@@ -389,24 +404,274 @@
 
     <div class="popup" id="c1-pop">
         <div class="flex">
-            <div class="item cs-bg">
-                <h4>Chapter 1 Summary</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, nemo expedita maiores amet
-                    a, sed quod repudiandae quos dolore, ea tempore dicta distinctio debitis enim. Id iusto
-                    consequatur in minima repellendus rerum impedit deleniti totam eaque accusamus sunt, quae
-                    magni dolore quia voluptatem officia autem, voluptatibus sapiente sequi vitae? Sequi
-                    eligendi a voluptas quasi rem qui tempore, eius ipsam eaque corporis suscipit maxime quas
-                    voluptate quidem eos libero veniam nam omnis, porro accusantium illum! Porro itaque, alias
-                    quod consequatur non labore vel veritatis asperiores inventore impedit, nemo at! Aliquam
-                    inventore esse pariatur quia soluta ipsum quae magni, corporis excepturi. Atque.</p>
+            <div class="cs-bg">
+                <div class="x-button">
+                    <button class="pop-close-btn" onclick="closePopup1()"><img src="Images/xButton.png" alt="X"></button>
+                </div>
+                <h4>Chapter 1- What is DEI?</h4>
+                <div class="ig">
+                    <div class="item">
+                        <embed class="infographics-img" src="Images/Infographics/ig1.pdf" type="application/pdf" width="850px" height="100%" toolbar="true" />
+                    </div>
+                </div>
+                
 
             </div>
-            <div class="item"> 
-                <button class="pop-close-btn" onclick="closePopup()">Close Me</button>
+            
+        </div>
+    </div>
+
+    <div class="popup" id="c2-pop">
+        <div class="flex">
+            <div class="cs-bg">
+                <div class="x-button">
+                    <button class="pop-close-btn" onclick="closePopup2()"><img src="Images/xButton.png" alt="X"></button>
+                </div>
+                <h4>Chapter 2- Who Does “Diversity” Include? EVERYONE</h4>
+                <div class="ig">
+                    <div class="item">
+                        <embed class="infographics-img" src="Images/Infographics/ig2.pdf" type="application/pdf" width="850px" height="100%" toolbar="true" />
+                    </div>
+                </div>
+                
+
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="popup" id="c3-pop">
+        <div class="flex">
+            <div class="cs-bg">
+                <div class="x-button">
+                    <button class="pop-close-btn" onclick="closePopup3()"><img src="Images/xButton.png" alt="X"></button>
+                </div>
+                <h4>Chapter 3- The Business Case</h4>
+                <div class="ig">
+                    <div class="item">
+                        <embed class="infographics-img" src="Images/Infographics/ig3.pdf" type="application/pdf" width="850px" height="100%" toolbar="true" />
+                    </div>
+                </div>
+                
+
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="popup" id="c4-pop">
+        <div class="flex">
+            <div class="cs-bg">
+                <div class="x-button">
+                    <button class="pop-close-btn" onclick="closePopup4()"><img src="Images/xButton.png" alt="X"></button>
+                </div>
+                <h4>Chapter 4- The Triple Bottom Line</h4>
+                <div class="ig">
+                    <div class="item">
+                        <embed class="infographics-img" src="Images/Infographics/ig4.pdf" type="application/pdf" width="850px" height="100%" toolbar="true" />
+                    </div>
+                </div>
+                
+
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="popup" id="c5-pop">
+        <div class="flex">
+            <div class="cs-bg">
+                <div class="x-button">
+                    <button class="pop-close-btn" onclick="closePopup5()"><img src="Images/xButton.png" alt="X"></button>
+                </div>
+                <h4>Chapter 5- Summary of All Cases</h4>
+                <div class="ig">
+                    <div class="item">
+                        <embed class="infographics-img" src="Images/Infographics/ig5.pdf" type="application/pdf" width="850px" height="100%" toolbar="true" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="popup" id="c6-pop">
+        <div class="flex">
+            <div class="cs-bg">
+                <div class="x-button">
+                    <button class="pop-close-btn" onclick="closePopup6()"><img src="Images/xButton.png" alt="X"></button>
+                </div>
+                <h4>Chapter 6- Explanations for Bias</h4>
+                <div class="ig">
+                    <div class="item">
+                        <embed class="infographics-img" src="Images/Infographics/ig6.pdf" type="application/pdf" width="850px" height="100%" toolbar="true" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    <div class="popup" id="c7-pop">
+        <div class="flex">
+            <div class="cs-bg">
+                <div class="x-button">
+                    <button class="pop-close-btn" onclick="closePopup7()"><img src="Images/xButton.png" alt="X"></button>
+                </div>
+                <h4>Chapter 7- Individual Level Discrimination</h4>
+                <div class="ig">
+                    <div class="item">
+                        <embed class="infographics-img" src="Images/Infographics/ig7.pdf" type="application/pdf" width="850px" height="100%" toolbar="true" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="popup" id="c8-pop">
+        <div class="flex">
+            <div class="cs-bg">
+                <div class="x-button">
+                    <button class="pop-close-btn" onclick="closePopup8()"><img src="Images/xButton.png" alt="X"></button>
+                </div>
+                <h4>Chapter 8- Organizational Level Discrimination</h4>
+                <div class="ig">
+                    <div class="item">
+                        <embed class="infographics-img" src="Images/Infographics/ig8.pdf" type="application/pdf" width="850px" height="100%" toolbar="true" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="popup" id="c9-pop">
+        <div class="flex">
+            <div class="cs-bg">
+                <div class="x-button">
+                    <button class="pop-close-btn" onclick="closePopup9()"><img src="Images/xButton.png" alt="X"></button>
+                </div>
+                <h4>Chapter 9- Strategies Individuals Can Take</h4>
+                <div class="ig">
+                    <div class="item">
+                        <embed class="infographics-img" src="Images/Infographics/ig9.pdf" type="application/pdf" width="850px" height="100%" toolbar="true" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="popup" id="c10-pop">
+        <div class="flex">
+            <div class="cs-bg">
+                <div class="x-button">
+                    <button class="pop-close-btn" onclick="closePopup10()"><img src="Images/xButton.png" alt="X"></button>
+                </div>
+                <h4>Chapter 10- Allies Acronym</h4>
+                <div class="ig">
+                    <div class="item">
+                        <embed class="infographics-img" src="Images/Infographics/ig10.pdf" type="application/pdf" width="850px" height="100%" toolbar="true" />
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
+    <div class="popup" id="c11-pop">
+        <div class="flex">
+            <div class="cs-bg">
+                <div class="x-button">
+                    <button class="pop-close-btn" onclick="closePopup11()"><img src="Images/xButton.png" alt="X"></button>
+                </div>
+                <h4>Chapter 11- SWOT Analysis Template</h4>
+                <div class="ig">
+                    <div class="item">
+                        <embed class="infographics-img" src="Images/Infographics/ig11.pdf" type="application/pdf" width="850px" height="100%" toolbar="true" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="popup" id="c12-pop">
+        <div class="flex">
+            <div class="cs-bg">
+                <div class="x-button">
+                    <button class="pop-close-btn" onclick="closePopup12()"><img src="Images/xButton.png" alt="X"></button>
+                </div>
+                <h4>Chapter 12- A-S-A Model</h4>
+                <div class="ig">
+                    <div class="item">
+                        <embed class="infographics-img" src="Images/Infographics/ig12.pdf" type="application/pdf" width="850px" height="100%" toolbar="true" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="popup" id="c13-pop">
+        <div class="flex">
+            <div class="cs-bg">
+                <div class="x-button">
+                    <button class="pop-close-btn" onclick="closePopup13()"><img src="Images/xButton.png" alt="X"></button>
+                </div>
+                <h4>Chapter 13- Recruitment Strategies</h4>
+                <div class="ig">
+                    <div class="item">
+                        <embed class="infographics-img" src="Images/Infographics/ig13.pdf" type="application/pdf" width="850px" height="100%" toolbar="true" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="popup" id="c14-pop">
+        <div class="flex">
+            <div class="cs-bg">
+                <div class="x-button">
+                    <button class="pop-close-btn" onclick="closePopup14()"><img src="Images/xButton.png" alt="X"></button>
+                </div>
+                <h4>Chapter 14- Selection Strategies</h4>
+                <div class="ig">
+                    <div class="item">
+                        <embed class="infographics-img" src="Images/Infographics/ig14.pdf" type="application/pdf" width="850px" height="100%" toolbar="true" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="popup" id="c15-pop">
+        <div class="flex">
+            <div class="cs-bg">
+                <div class="x-button">
+                    <button class="pop-close-btn" onclick="closePopup15()"><img src="Images/xButton.png" alt="X"></button>
+                </div>
+                <h4>Chapter 15- Retention Strategies</h4>
+                <div class="ig">
+                    <div class="item">
+                        <embed class="infographics-img" src="Images/Infographics/ig15.pdf" type="application/pdf" width="850px" height="100%" toolbar="true" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="popup" id="c16-pop">
+        <div class="flex">
+            <div class="cs-bg">
+                <div class="x-button">
+                    <button class="pop-close-btn" onclick="closePopup16()"><img src="Images/xButton.png" alt="X"></button>
+                </div>
+                <h4>Chapter 16- SMART Goals for Change</h4>
+                <div class="ig">
+                    <div class="item">
+                        <embed class="infographics-img" src="Images/Infographics/ig16.pdf" type="application/pdf" width="850px" height="100%" toolbar="true" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
     <footer class="footer-minimalist">
         <div class="footer-flex">
             <div class="footer-logo">
@@ -443,18 +708,37 @@
     </script>
 
     <script>
-        let pop1 = document.getElementById("c1-pop")
-
-        function openPopup() {
-            pop1.classList.add("open-popup")
-            document.body.style.overflow = "hidden"; // Prevent scrolling on the body
-            
+        // Function to open popup
+        function openPopup(index) {
+            let popup = document.getElementById("c" + index + "-pop");
+            if (popup) {
+                popup.classList.add("open-popup");
+                document.body.style.overflow = "hidden"; // Prevent scrolling on the body
+            }
         }
-        function closePopup() {
-            pop1.classList.remove("open-popup")
-            document.body.style.overflow = ""; // Restore scrolling on the body
 
+        // Function to close popup
+        function closePopup(index) {
+            let popup = document.getElementById("c" + index + "-pop");
+            if (popup) {
+                popup.classList.remove("open-popup");
+                document.body.style.overflow = ""; // Restore scrolling on the body
+            }
         }
+
+        // Event listeners to open popups
+        document.querySelectorAll('.popup-container .item').forEach((item, index) => {
+            item.addEventListener('click', () => {
+                openPopup(index + 1); // Add 1 because index starts from 0
+            });
+        });
+
+        // Event listeners to close popups
+        document.querySelectorAll('.pop-close-btn').forEach((button, index) => {
+            button.addEventListener('click', () => {
+                closePopup(index + 1); // Add 1 because index starts from 0
+            });
+        });
     </script>
 
     <!-- Audio Player -->
