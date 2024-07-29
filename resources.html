@@ -14,21 +14,22 @@
     <!-- Navbar -->
     <div class="navbar" id="navbar">
         <div class="container flex">
-            <a href="index.html">
-                <h1 class="logo"><img src="/Images/wt-logo.png" alt=""></h1>
-            </a>
-
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="activities.html">Activities</a></li>
-                    <li><a href="resources.html">Resources</a></li>
-                    <li><a href="people.html">People</a></li>
-                    <li><a href="Tests.html">Tests</a></li>
-                </ul>
-            </nav>
+          <a href="index.html">
+            <h1 class="logo"><img src="/Images/wt-logo.png" alt=""></h1>
+          </a>
+    
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="activities.html">Activities</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="people.html">People</a></li>
+              <!-- <li><a href="Tests.html">Tests</a></li>
+              <li><a href="Tests3.html">Tests3</a></li> -->
+            </ul>
+          </nav>
         </div>
-    </div>
+      </div>
 
     <section class="resources-intro">
         <div class="flex">
@@ -751,17 +752,32 @@
 
     <footer class="footer-minimalist">
         <div class="footer-flex">
-            <div class="footer-logo">
-                <b>Working Together</b>
+          
+          <div class="footer-logo">
+            <div class="flex">
+              <b>Working Together</b>
+              <sub>Practicing the Science of Diversity, Equity, and Inclusion</sub>
             </div>
-            <div class="footer-links">
-                <a href="#" class="link-1"><img src="Images/social-media/facebook.svg" alt=""></a>
-                <a href="#" class="link-1"><img src="Images/social-media/linkedin.svg" alt=""></a>
-                <a href="#" class="link-1"><img src="Images/social-media/x.svg" alt=""></a>
-                <a href="#" class="link-1"><img src="Images/social-media/instagram.svg" alt=""></a>
+            
+            
+          </div>
+          <div class="beck-flex" onclick="redirectToUrl('https://www.linkedin.com/in/beck-edwards-272b7425b/')">
+            
+            <div class="item">
+              <img class="face-circle" src="/Images/Faceshots/BeckEdwards.jpg" alt="">
             </div>
+            <div class="beck-p">
+              Designed & Coded from scratch by <a>Beck Edwards</a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <a href="#" class="link-1"><img src="Images/social-media/facebook.svg" alt=""></a>
+            <a href="#" class="link-1"><img src="Images/social-media/linkedin.svg" alt=""></a>
+            <a href="#" class="link-1"><img src="Images/social-media/x.svg" alt=""></a>
+            <a href="#" class="link-1"><img src="Images/social-media/instagram.svg" alt=""></a>
+          </div>
         </div>
-    </footer>
+      </footer>
 
 
     <!-- Swiper JS -->
@@ -915,6 +931,11 @@
             ).padStart(2, 0)}`;
         }
     </script>
+    <script>
+        function redirectToUrl(url) {
+            window.open(url, '_blank');
+        }
+      </script>
 
 </body>
 

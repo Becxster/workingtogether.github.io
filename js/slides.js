@@ -1,4 +1,8 @@
 
+function redirectToUrl(url) {
+    window.open(url, '_blank');
+  }
+
 // Parallax
 
 let colorfulDotsL = document.getElementById('colorfulDots-l')
